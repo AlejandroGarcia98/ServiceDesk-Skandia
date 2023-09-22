@@ -1,0 +1,382 @@
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/montserrat/Montserrat-Black.otf') format('opentype'); 
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/montserrat/Montserrat-Bold.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/montserrat/Montserrat-Light.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/montserrat/Montserrat-Medium.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 1*/
+    font-family: 'Montserrat-Thin';
+    src: url('../fonts/montserrat/Montserrat-Thin.otf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 2*/
+    font-family: 'Verdana';
+    src: url('../fonts/verdana/Verdana.ttf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 2*/
+    font-family: 'Verdana-Bold';
+    src: url('../fonts/verdana/Verdana\ Bold.ttf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 2*/
+    font-family: 'Verdana-BoldItalic';
+    src: url('../fonts/verdana/Verdana\ Bold\ Italic.ttf') format('opentype');
+}
+
+@font-face {
+    /*Fuentes estilo 2*/
+    font-family: 'Verdana-Italic';
+    src: url('../fonts/verdana/Verdana\ Italic.ttf') format('opentype');
+}
+
+:root {
+    /*Colores*/
+    --blanco: #FFFFFF;
+    --gris-claro: #00000029;
+    --verde-skandia: #00C83C;
+    --blanco-hueso:#00000000;
+    --negro-claro: #3F3F3F;
+    --naranja-claro: #FECD72;
+    --azul-claro: #A5D7E1;
+    --verde-azul: #95DBB7;
+    --negro-oscuro: #363636;
+    --naranja: #FE9200;
+    --azul-espacio: #63AABC;
+    --gris-claro-dos: #C4C7C4;
+    --naranja-rojizo: #FF9460;
+    --gris-tres: #E2E2E2;
+    --verde-moco: #A4D071;
+    --gris-cuatro: #EDEDED;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat-Light';
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: var(--blanco);
+    z-index: 9999;
+}
+
+/* Estilos aside*/
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    background-color: var(--blanco);
+    position: fixed;
+}
+
+nav img {
+    margin-left: 20px;
+}
+
+nav span i{
+    color: var(--verde-skandia);
+    font-size: 2.7rem;
+    cursor: pointer;
+}
+
+aside {
+    background-color: #E2E2E2;
+    width: 231px;
+    height:718px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    margin-top: 80px;
+    transition: 0.5;
+}
+
+aside:hover {
+    overflow-y: auto;
+}
+
+.desplegar {
+    transform: translateX(-100%);
+}
+
+aside::-webkit-scrollbar {
+    width: 8px;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: var(--verde-skandia);
+    border-radius: 5px;
+} 
+
+.container-svg {
+    border-bottom: 1px solid var(--blanco);
+    padding: 10px 1px;
+}
+
+.container-svg:hover {
+    background-color: var(--verde-skandia);
+}
+
+.container-svg div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container-svg img {
+    margin-left: 15px;
+    width: 16px;
+    height: 17px;
+}
+
+.container-svg a {
+    padding-left: 20px;
+    font-size:1.6rem;
+    color: var(--negro-oscuro);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none
+}
+
+/*Estilos main*/
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.first-section {
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+}
+
+.first-section--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section--container img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.description--container {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background: var(--gris-tres);
+}
+
+.description--container .description--tittle {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+}
+
+.description--container .description {
+    width: 70%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+}
+
+/*Segunda seccion*/
+
+.main-second-section {
+    width: 100%;
+    min-width: 320px;
+    margin-bottom: 30px;
+    background-color: var(--negro-oscuro);
+}
+
+.plans-tittle {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.plans-tittle h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.plans-tittle p {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--blanco);
+    text-align: center;
+}
+
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 5px 5px 5px;
+    padding: 0 15px;
+    background-color: var(--blanco);
+    border-radius: 15px;
+}
+
+.plans-container--card:hover {
+    border-color: #00b050;
+}
+
+.plan-info-container {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.plan-info-container .plan-img {
+    width: 70px;
+    height: 70px;
+    padding-top: 15px;
+}
+
+.plan-info-container .plan-card--tittle {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.plan-info-container .plan-card--description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.plan-info-container .plan-card--ca {
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #00b050;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.plan-info-container .plan-card--ca a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem; 
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+/*Tercera seccion*/
+
+.third-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.third-section h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+/*Cuarta seccion*/
+
+.backgroundimg {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.backgroundimg img {
+    width: 100%;
+    height: auto;
+}

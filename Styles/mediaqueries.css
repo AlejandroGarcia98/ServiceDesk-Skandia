@@ -1,0 +1,114 @@
+@media screen and (min-width: 768px) {
+    .first-section--container {
+        display: flex;
+        flex-direction: row;
+    }
+    .first-section--container img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .description--tittle {
+        padding-top: 50px;
+    }
+
+    .plans-tittle h2 {
+        font-size: 3.5rem;
+    }
+
+    .plans-tittle p {
+        font-size: 2rem;
+    }
+
+    .plan-info-container .plan-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icons-footer-section a img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .footer-first-section img {
+        width: 150px;
+    }
+
+    .footer-first-section h5 {
+        font-size: 1.6rem;
+    }
+
+    .footer-first-section li p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .description--container .description--tittle {
+        font-size: 3rem;
+        line-height: normal;
+    }
+
+    .description--container .description {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+
+    .plans-container--slider {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons-footer-section a img {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-second-section {
+        height: 500px;
+        margin-bottom: 70px;
+    }
+
+    .description--tittle {
+        padding-top: 100px;
+    }
+
+    .description--container .description--tittle {
+        font-size: 3rem;
+    }
+
+    .description--container .description {
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .plans-container--card {
+        height: 300px;
+    }
+
+    .plans-container--slider {
+        height: 350px;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .plan-info-container .plan-card--description {
+        font-size: 1.8rem;
+    }
+
+    .plan-info-container .plan-card--ca {
+        width: 150px;
+        height: 60px;
+    }
+
+    .plan-info-container .plan-card--ca a {
+        font-size: 1.5rem;
+    }
+
+    .third-section h4 {
+        font-size: 4.5rem;
+    }
+}
